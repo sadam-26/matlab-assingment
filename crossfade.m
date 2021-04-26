@@ -1,7 +1,6 @@
 clc; 
 img = imread('kkk.jpg'); 
 FaceDetect = vision.CascadeObjectDetector; 
-FaceDetect.MergeThreshold = 7 ;
 BB = step(FaceDetect, img); 
 facecount = size(BB, 1);
 for i = 1 : facecount
